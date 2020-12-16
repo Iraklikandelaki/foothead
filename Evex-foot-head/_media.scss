@@ -1,0 +1,1362 @@
+
+@media (max-width: 1680px){
+    
+    .subscribe-sm{
+        display: none;
+    }
+    .header{
+        top: 69px;
+        
+    }
+    .container{
+        max-width: 1578px;
+        
+    }
+    .hero{
+        height: 460px;
+       
+    }
+
+    /* RESERVED DOCTORS */
+
+    .reserved-doctors{
+      
+        .row{
+            .col{
+
+                
+                &:nth-child(2){
+                    padding-left: 43.5px;
+                }
+                &:nth-child(3){
+                    padding-left: 41.34px;
+                }
+                &:nth-child(4){
+                    padding-left: 40.15px;
+                }
+                &:nth-child(5){
+                    padding-left: 15.59px;
+                }
+                &:nth-child(6){
+                    padding-left: 15.6px;
+                }
+                &:nth-child(7){
+                    padding-left: 14.5px;
+                }
+            }
+        }
+    }
+
+    /* RESERVED DOCTORS */
+    
+}
+@media (max-width: 1600px){
+    .container{
+        max-width: 1400px;
+        
+    } 
+}
+@media (max-width: 1440px){
+    .header{
+        top: 34px;
+    }
+    .container{
+        max-width: 1206px;
+        
+    } 
+}
+@media (max-width: 1366px){
+    .row-doctors-momma.lg-only{
+        display: none;
+    }
+     .row-doctors-momma.sm-only{
+    display: block;
+     }
+    .hero{
+        height: 400px;
+    }
+    .container{
+        max-width: 1206px;
+        
+    }
+
+
+   /* RESERVED DOCTORS */
+
+  
+.date{
+    .accordion-icon{
+        display: block;  
+    }
+}
+
+
+   .reserved-doctors{
+       .row-doctors{
+        cursor: pointer;
+       }
+       .row-header{
+           &:after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            width: 100%;
+            background-color: #AAAAAA;
+            opacity: 0.5;
+           }
+           .col{
+               &:nth-child(5){
+                   &:after{
+                    content: "";
+                    position: absolute;
+               
+                    right: 0;
+                    width: 0px;
+                    height: 30px;
+                    background-color: #fff;
+                    opacity: 0.3;
+                   }
+
+               }
+           }
+       }
+    .row{
+        
+        padding-left: 22.5px;
+        padding-right: 22.5px;
+        .col{
+
+            &:nth-child(1){
+                width: 18.71%;
+            }
+            &:nth-child(2){
+                padding-left: 43.5px;
+                width: 17.0945%;
+            }
+            &:nth-child(3){
+                padding-left: 41.34px;
+                width: 24.2272%;
+            }
+            &:nth-child(4){
+                padding-left: 40.15px;
+                width: 16.3889%;
+            }
+            &:nth-child(5){
+                padding-left: 69.5px;
+                width: 24.05%;
+                display: flex;
+                justify-content: space-between;
+            }
+            &:nth-child(6){
+               display: none;
+            }
+            &:nth-child(7){
+                display: none;
+            }
+        }
+    }
+}
+
+.accordion-icon.active-icon{
+    span{
+        display: inline-block;
+        transition: all ease-in-out .3s;
+        &:nth-child(1){
+            position: relative;
+            margin-top: 10.5px;
+            margin-bottom: 10.5px;
+            width: 24px;
+            height: 3px;
+            
+            background-color: #00AEA9;
+            
+        }
+        &:nth-child(2){
+            position: absolute;
+            
+            height: 24px;
+            margin-left: 10.5px;
+            margin-right: 10.5px;
+            width: 3px;
+            top: 0;
+            left: 0;
+            transform: rotate(90deg);
+            
+            background-color: #00AEA9;
+        }
+    }
+}
+
+
+
+.content{
+    .col-title{
+        font-family: "NotoSansGeorgian-Bold", "NotoSans-Bold" !important;
+        margin-bottom: 8px;
+    }
+    .time{
+        display: none !important;
+        
+    }
+    .date{
+        display: none !important;
+    }
+    .row{
+
+        justify-content: flex-start;
+        cursor: initial;
+        .col{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column !important;
+            &:nth-child(3){
+                img{
+                    height: 18px;
+                    width: 18px;
+                }
+            }
+        }
+    }
+
+    .cancel{
+        padding-left: 43.5px !important;
+        width: 17.0945% !important;
+        
+        cursor: pointer;
+
+    }
+    .cancel-child{
+        @include flexAlignCenter;
+        span{
+           padding-bottom: 5px;
+        }
+        img{
+            margin-right: 10px;
+        }
+        height: 20px;
+        
+    }
+    .status{
+        flex-direction: column;
+        align-items: flex-start !important;
+        
+    }
+
+    .ekimo-status{
+        padding-left: 30.15px;
+       .wrapper{
+            display: flex;
+        align-items: center !important;
+        flex-direction: row;
+        span{
+            font-size: 12px;
+            margin: 0 5px;
+        }
+       }
+    }
+    .info-box{
+        @include flexAlignCenter();
+        position: relative;
+        &:hover{
+            &:before, &:after{
+                opacity: 1;
+            }
+        }
+        &:before{
+            position: absolute;
+            content: "ჯავშნის გაუქმება შესაძლებელია მხოლოდ EKIMO-ს აპლიკაციით";
+            top: -110px;
+            left: -101px;
+            height: 86px;
+            width: 202px;
+            box-shadow: 0px 10px 20px #00000008;
+            background-color: #fff;
+            border: 1px solid #CEEBEC;
+            padding-left: 10.47px;
+            padding-top: 10px;
+            border-radius: 8px;
+            pointer-events: none;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.9);
+            font-family: "NotoSansGeorgian-Bold", "NotoSans-Bold";
+            transition: 0.3s opacity ease;
+            opacity: 0;
+            z-index: 70;
+            
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: -18px;
+            height: 12px;
+            width: 12px;
+            background-color: #fff;
+            border-top: none;
+            border-bottom: 1px solid  #CEEBEC;
+            border-right: 1px solid  #CEEBEC;
+            box-shadow: 0px 10px 20px #00000008;
+            
+            transform: rotate(45deg);
+            transition: 0.3s opacity ease;
+            opacity: 0;
+            z-index: 70;
+        }
+    }
+}
+
+/* RESERVED DOCTORS */
+
+
+
+
+
+    footer{
+
+    
+    .middle-footer{
+        .container{
+
+        
+        .row{
+
+        
+        .subscribe{
+            width: 490px;
+            input[type="email"] {
+                width: 358px;
+                padding: 0 26px;
+            }
+            input[type="submit"] {
+                width: 132px;
+            }
+        }
+    }
+}
+}
+}
+}
+
+@media (max-width: 1365px){
+    .container{
+        max-width: 93.16%;
+    }
+
+     /* RESERVED DOCTORS */
+
+
+.reserved-doctors{
+    .row-header{
+        .col{
+            &:nth-child(5){
+                &:after{
+                 content: "";
+                 position: absolute;
+            
+                 right: 0;
+                 width: 0px;
+                 height: 30px;
+                 background-color: #fff;
+                 opacity: 0.3;
+                }
+
+            }
+        }
+    }
+ .row{
+     justify-content: space-between;
+     padding-left: 22.5px;
+     padding-right: 22.5px;
+     .col{
+
+         &:nth-child(1){
+             width: 19.25%;
+         }
+         &:nth-child(2){
+             padding-left: 43.5px;
+             width: 22.68%;
+         }
+         &:nth-child(3){
+             padding-left: 41.34px;
+             width: 32.143%;
+         }
+         &:nth-child(4){
+             display: none;
+         }
+         &:nth-child(5){
+             padding-left: 30.15px;
+             width: 25.924%;
+             display: flex;
+             justify-content: space-between;
+         }
+         &:nth-child(6){
+            display: none;
+         }
+         &:nth-child(7){
+             display: none;
+         }
+     }
+ }
+}
+
+.content{
+    .cancel{
+        padding-left: 30.15px !important;
+        width: 25.924% !important;
+        align-items: center;
+        flex-direction: row !important;
+        img{
+            margin-right: 10px;
+        }
+        .cancel-child{
+            display: flex !important;
+            align-items: center; 
+            
+        }
+    }
+    .time{
+        display: flex !important;
+        width: 32.143% !important;
+    }
+    .date{
+        display: none !important ;
+    }
+    .row{
+        justify-content: flex-start;
+        .col{
+            &:nth-child(1){
+                width: 19.25% !important;
+            }
+            &:nth-child(2){
+                margin-left: 22.68%;
+            }
+            &:nth-child(4){
+               display: flex !important;
+              
+                
+            }
+        }
+    }
+
+    .ekimo-status{
+        width: 25.924% !important;
+        padding-left: 30.15px !important;
+        .wrapper{
+             display: flex;
+         align-items: center !important;
+         flex-direction: row;
+         span{
+             font-size: 12px;
+             margin: 0 5px;
+         }
+        }
+     }
+}
+
+/* RESERVED DOCTORS */
+
+}
+
+
+
+@media (max-width: 1240px){
+    
+    
+    footer{
+
+    
+    .middle-footer{
+        .container{
+
+       
+            .row {
+                .footer-col{
+        .subscribe{
+            width: 414px;
+             input[type="email"] {
+                width: 292px;
+                padding: 0 22px;
+            }
+            input[type="submit"] {
+                width: 122px;
+            }
+        }
+    }
+}
+        }
+    }
+}
+}
+
+
+
+@media (max-width: 1024px){
+    .container{
+        max-width: 93.16%;
+    }
+    header{
+        .menu-btn{
+            margin-left: 22px;
+        }
+        .right-col{
+            .langs{
+                padding-left: 34px;
+                margin-left: 34px;
+            }
+        }
+    }
+    .hero{
+        height: 360px;
+    }
+
+    
+  
+    }
+
+
+
+
+
+@media (max-width: 1023px){
+    .container{
+        
+        
+        max-width: 94.53%;
+       
+    }
+    /* RESERVED DOCTORS */
+    .cancel-modal{
+        .actual-modal{
+            width: 726px;
+            height: auto;
+        }
+    }
+
+.name{
+    .accordion-icon{
+        display: block;  
+    }
+}
+
+.date{
+    .accordion-icon{
+        display: none;  
+    }
+}
+
+
+.reserved-doctors{
+
+    
+    
+    .row-header{
+        .col{
+            &:nth-child(5){
+                &:after{
+                 content: "";
+                 position: absolute;
+            
+                 right: 0;
+                 width: 0px;
+                 height: 30px;
+                 background-color: #fff;
+                 opacity: 0.3;
+                }
+
+            }
+            &:nth-child(3){
+                &:after{
+                 content: "";
+                 position: absolute;
+            
+                 right: 0;
+                 width: 0px;
+                 height: 30px;
+                 background-color: #fff;
+                 opacity: 0.3;
+                }
+
+            }
+        }
+    }
+ .row{
+     justify-content: space-between;
+     padding-left: 22.5px;
+     padding-right: 22.5px;
+     .col{
+
+         &:nth-child(1){
+             width: 25.7%;
+         }
+         &:nth-child(2){
+             padding-left: 20.5px;
+             width: 29.539%;
+         }
+         &:nth-child(3){
+             display: flex;
+             justify-content: space-between;
+             padding-left: 20.34px;
+             width: 44.764%;
+             
+         }
+         &:nth-child(4){
+             display: none;
+         }
+         &:nth-child(5){
+            display: none;
+         }
+         &:nth-child(6){
+            display: none;
+         }
+         &:nth-child(7){
+             display: none;
+         }
+     }
+ }
+ .row-doctors{
+   
+     .col{
+        &:nth-child(3){
+            
+            justify-content: flex-start;
+            padding-left: 20.34px;
+            width: 44.764%;
+            .name-span{
+                width: 170px;
+                
+                margin-left: 11.44px;
+            }
+           .accordion-icon{
+               margin-left: auto;
+           }
+            .accordion-icon span:nth-child(1) {
+                position: relative;
+                margin-top: 10.5px;
+                margin-bottom: 10.5px;
+                width: 24px;
+                height: 3px;
+                background-color: #00AEA9;
+            }
+            
+        }
+     }
+ }
+}
+
+
+.content.active{
+    opacity: 1;
+     max-height: 180px !important;
+     transition: max-height linear 0.5s, opacity ease 0.3s 0.4s !important;
+   }
+.content{
+    transition: max-height linear 0.5s, opacity linear .3s  !important;
+    .cancel{
+        display: flex !important;
+        padding-left: 0 !important;
+        width: 25.924% !important;
+    }
+    .time{
+        width: 29.539% !important;
+    }
+    .date{
+        display: flex !important;
+            padding-left: 20.34px;
+        width: 22.382% !important;
+    }
+    .cancel{
+        width: 22.382% !important;
+    }
+  
+    .row{
+        justify-content: space-between;
+
+        align-items: flex-start;
+        
+        .col{
+            &:nth-child(1){
+                width: 25.7% !important;
+            }
+            &:nth-child(2){
+                margin-left: 0 !important;
+                padding-left: 0 !important;
+            }
+           
+        }
+    }
+
+    .ekimo-status{
+        width: 22.382% !important;
+        padding-left: 0px !important;
+        .wrapper{
+             display: flex;
+         align-items: center !important;
+         flex-direction: row;
+         span{
+             font-size: 10px;
+             margin: 0 5px;
+         }
+        }
+     }
+    
+}
+
+/* RESERVED DOCTORS */
+
+}
+
+@media (max-width: 900px){
+    .content{
+        .info-box{
+            &:before{
+                position: absolute;
+                content: "ჯავშნის გაუქმება შესაძლებელია მხოლოდ EKIMO-ს აპლიკაციით";
+                top: -114px;
+                left: -101px;
+                height: 90px;
+                width: 150px;
+                box-shadow: 0px 10px 20px #00000008;
+                background-color: #fff;
+                border: 1px solid #CEEBEC;
+                padding-left: 10.47px;
+                padding-top: 10px;
+                border-radius: 8px;
+                pointer-events: none;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.9);
+                font-family: "NotoSansGeorgian-Bold", "NotoSans-Bold";
+                transition: 0.3s opacity ease;
+                opacity: 0;
+                z-index: 70;
+                
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                left: 5px;
+                top: -18px;
+                height: 12px;
+                width: 12px;
+                background-color: #fff;
+                border-top: none;
+                border-bottom: 1px solid  #CEEBEC;
+                border-right: 1px solid  #CEEBEC;
+                box-shadow: 0px 10px 20px #00000008;
+                
+                transform: rotate(45deg);
+                transition: 0.3s opacity ease;
+                opacity: 0;
+                z-index: 70;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px){
+
+   
+    footer{
+
+    
+    .middle-footer{
+        height: 274px;
+        .container{
+
+       
+            .row {
+                height: 274px;
+                
+                .footer-col{
+                    width: 100%;
+                    justify-content: center;
+                    &:nth-child(1){
+                        order: 3;
+                    }
+                    &:nth-child(2){
+                        order: 2;
+                    }
+                    &:nth-child(3){
+                        order: 1;
+                    }
+                .subscribe{
+                   
+                    width: 540px;
+                    input[type="email"] {
+                        width: 390px;
+                        padding: 0 32px;
+                    }
+                    input[type="submit"] {
+                    width: 150px;
+            }
+            }
+    }
+    }
+}
+.socials{
+    a{
+        svg{
+            margin: 14px 14px 0 14px;
+        }
+    
+    }
+    span{
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+.footer-logo{
+    width: 62px;
+}
+    }
+}  
+    
+}
+@media (max-width: 768px){
+   
+    .container{
+        
+        
+        max-width: 94.53%;
+       
+    }
+    footer{
+    margin-top: -340px;
+    padding-top: 380px;
+    position: relative;
+    
+    .footer-menu{
+        display: none ;
+    }
+    .middle-footer{
+        .container{
+
+       
+        .row {
+            justify-content: center;
+            .footer-col{
+                width: 100%;
+                
+                .subscribe{
+                    display: none;
+                    }   
+                }
+            }
+        }
+       
+    }
+    .bottom-footer{
+        .row{
+            .footer-col{
+                width: 100%;
+                justify-content: center;
+                margin: 10px 0;
+                &:nth-child(1){
+                    justify-content: center;
+                    order: 2;
+                }
+                &:nth-child(2){
+                    justify-content: center;
+                    order: 1;
+                }
+                &:nth-child(3){
+                    justify-content: center;
+                    order: 3;
+                }
+            }
+        }
+    }
+    }
+    .subscribe-sm{
+        @include flexAlignCenter();
+    }
+ 
+}
+
+@media (max-width: 767px){
+    .fixed-menu{
+        display: none;
+    }
+    .menu-coming-out{
+        
+        min-height: 900px;
+        clip-path: none;
+        .bg-img, .gradient{
+            top: 42px;
+        }
+        .menu-box{
+            flex-direction: column;
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+            .menu-col-left, .menu-col-right{
+                width: 100%;
+            }
+        }
+    }
+    .phone-header-sm{
+        display: block;
+     
+         
+      background-color: #fff;
+         .row{
+          @include flexAlignCenter;
+         background-color: #fff;  
+          width: 100%;
+          padding: 11.5px 0px;
+         }
+         span{
+          color: #015a58;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: 'Ubuntu', sans-serif;
+         }
+         i{
+             transform: rotate(90deg);
+             margin-right: 10px;
+             color: #015a58;
+         }
+        
+         
+        
+     }
+     
+      .header{
+          top: 76px;
+          .left-col{
+              .phone{
+                  display: none;
+                  &:before{
+                      width: 0px;
+                  }
+              }
+          }
+          
+          .right-col{
+              .langs{
+                  display: none ;
+              }
+          }
+          .logo{
+              .img{
+                  img{
+                      width: 56px;
+                  }
+              }
+              .menu-btn{
+                  margin-left: 0;
+                  margin-right: 13px;
+                  margin-top: 6px;
+              }
+      }
+      .hero{
+          height: 300px;
+      }
+      
+     
+          .txt{
+              .img-title-top{
+                  width: 84px;
+              }
+              .img-title-bottom{
+                  width: 84px;
+                 
+              }
+          }
+      }
+    .container{
+        max-width: 91.47%;
+    }
+
+
+      /* RESERVED DOCTORS */
+      .cancel-modal{
+          .modal-footer{
+              .buttons{
+                  .btn-1, .btn-2{
+                    width: 153px;
+                    height: 40px;
+                  }
+                  .btn-1{
+                      margin-right: 17px;
+                  }
+                  .btn-2{
+                      padding-left: 45px;
+                      padding-bottom: 11px;
+                      padding-top: 12px;
+                      margin-right: 0;
+                  }
+              }
+          }
+          .foot-title span{
+              font-size: 14px;
+          }
+          .actual-modal{
+              width: 343px;
+             padding-left: 10px;
+             padding-right: 10px;
+             padding-bottom: 10px;
+             padding-top: 10px;
+             margin-top: 0;
+          }
+          .reserve-info{
+              padding-right: 0;
+              padding-bottom: 20px;
+              display: block;
+              .patient-info{
+                  width: 100%;
+                  padding-left: 0;
+                  .name-div{
+                      margin-bottom: 20px;
+                  }
+              }
+              .name-div{
+                span:nth-child(1) {
+                    font-family: "bpg-nino-mtavruli-bold";
+                    color: #00AEA9;
+                    font-size: 14px;
+                }
+                  img{
+                    height: 38px;
+                    width: 38px;
+                  }
+              }
+              .doctor-info{
+                  border-right: 0px solid transparent;
+                  width: 100%;
+                  .credentials-div{
+                      display: none;
+                  }
+                  .credentials-div.sm{
+                    display: flex;
+                    padding-bottom: 20px;
+                    border-bottom: 3px solid rgba(170, 170, 170, 0.3);
+                    margin-bottom: 20px;
+                    
+                    .reserve-content{
+                        display: flex;
+                        flex-direction: column;
+                        max-height: 0;
+                        transition: max-height linear .6s;
+                        overflow: hidden;
+                        background-color: #E5F7F6;
+                    }
+                    .reserve-content.active{
+                        max-height: 400px;
+                        transition: max-height linear .6s;
+                    }
+                    .accordion-title{
+                        @include flexAlignCenter;
+                        justify-content: space-between;
+                        width: 100%;
+                        background-color: #E5F7F6;
+                        height: 36px;
+                        padding-left: 30px;
+                        img{
+                            margin-right: 10px;
+                        }
+                        span{
+                            color: #00AEA9;
+                        }
+                    }
+                }
+              }
+          }
+          .title-row{
+            margin-top: 0px;
+            display: flex;
+            justify-content: space-between;
+            span{
+                display: inline-block;
+                &:nth-child(1){
+                    font-size: 22px;
+                    font-family: "bpg-nino-mtavruli-bold";
+                    color: black;
+                }
+                
+            }
+        }
+      }
+      .sm-only{
+          display: flex;
+      }
+    
+    .row-doctors-momma.lg-only{
+        display: none;
+    }
+     .row-doctors-momma.sm-only{
+    display: block;
+     }
+
+.name{
+    .accordion-icon{
+        display: block;  
+    }
+}
+
+.date{
+    .accordion-icon{
+        display: none;  
+    }
+}
+
+
+.reserved-doctors{
+
+    
+    .note-momma{
+        justify-content: flex-end;
+        .ekimo-note{
+            display: none;
+        }
+    }
+    .row-header{
+        .col{
+            &:nth-child(5){
+                &:after{
+                 content: "";
+                 position: absolute;
+            
+                 right: 0;
+                 width: 0px;
+                 height: 30px;
+                 background-color: #fff;
+                 opacity: 0.3;
+                }
+
+            }
+            &:nth-child(3){
+                &:after{
+                 content: "";
+                 position: absolute;
+            
+                 right: 0;
+                 width: 0px;
+                 height: 30px;
+                 background-color: #fff;
+                 opacity: 0.3;
+                }
+
+            }
+        }
+    }
+ .row{
+     justify-content: space-between;
+     padding-left: 22.5px;
+     padding-right: 22.5px;
+     .col{
+
+         &:nth-child(1){
+            display: none;
+         }
+         &:nth-child(2){
+            display: none;
+         }
+         &:nth-child(3){
+             display: flex;
+             justify-content: space-between;
+             padding-left: 0px;
+             width: 93.44%;
+             
+             
+         }
+         &:nth-child(4){
+             display: none;
+         }
+         &:nth-child(5){
+            display: none;
+         }
+         &:nth-child(6){
+            display: none;
+         }
+         &:nth-child(7){
+             display: none;
+         }
+     }
+ }
+ .row-doctors{
+   
+     .col{
+        &:nth-child(3){
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0px;
+            width: 100%;
+            .name-span{
+                
+                display: none;
+            }
+            .info-spans{
+                width: 70%;
+                
+                margin-left: 11.44px;
+                display: flex;
+                flex-direction: column;
+                span{
+                    &:nth-child(1){
+                        font-family: "NotoSansGeorgian-Bold", "NotoSans-Bold";
+                        margin-bottom: 5px;
+                    }
+                    &:nth-child(2){
+                        font-size: 12px;
+                        margin-bottom: 5px;
+                    }
+                    &:nth-child(3){
+                        font-size: 12px;
+                   
+                    }
+                }
+              
+            }
+           .accordion-icon{
+               margin-left: auto;
+           }
+            .accordion-icon span:nth-child(1) {
+                position: relative;
+                margin-top: 10.5px;
+                margin-bottom: 10.5px;
+                width: 24px;
+                height: 3px;
+                background-color: #00AEA9;
+            }
+            
+        }
+     }
+ }
+ .content{
+    .row{
+        .col{
+            display: block;
+        }
+        justify-content: flex-start;
+    }
+    .cancel{
+        justify-content: center !important;
+
+    }
+    .cancel-child{
+        @include flexAlignCenter;
+        span{
+            margin-left: 5px !important;
+        }
+        img{
+            margin-right: 3px;
+        }
+    }
+    .status{
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+}
+.ekimo-status{
+    padding-left: 30.15px;
+   .wrapper{
+        display: flex;
+    align-items: center !important;
+    flex-direction: row;
+    span{
+        font-size: 12px;
+        margin-left: 13px;
+        margin-right: 10px;
+    }
+   }
+}
+
+.content.active{
+    opacity: 1;
+     max-height: 700px !important;
+     transition: max-height linear 0.5s, opacity ease 0.3s 0.4s !important;
+   }
+.content{
+    transition: max-height linear 0.5s, opacity linear .3s  !important;
+}
+
+}
+
+/* RESERVED DOCTORS */
+
+
+}
+
+@media (max-width: 560px){
+    .content .row .col:nth-child(1) {
+        width: 100% !important;
+    }
+    .reserved-doctors .row .col:nth-child(1) {
+        width: 100% !important; 
+    }
+    .content{
+        .row{
+            flex-direction: column;
+            .col{
+                display: block;
+            }
+            justify-content: flex-start;
+        }
+     
+        .cancel{
+            justify-content: center !important;
+            width: 100% !important;
+    
+        }
+        .cancel-child{
+            @include flexAlignCenter;
+            span{
+                margin-left: 5px !important;
+            }
+            img{
+                margin-right: 3px;
+            }
+        }
+        
+      
+        .status{
+            display: flex !important;
+            flex-direction: column;
+            align-items: flex-start !important;
+            width: 100% !important;
+        }
+        .time, .date{
+            width: 100% !important;
+        }
+    }
+
+    .reserved-doctors .row-doctors .col {
+        padding-bottom: 15px; 
+        padding-top: 15px; 
+    }
+}
+
+@media (max-width: 375px){
+  
+    .hero{
+        height: 330px;
+    }
+   
+    
+}
+
+
+@media (max-height: 720px){
+    .cancel-modal .reserve-info .credentials-div{
+        overflow: auto;
+        height: 150px;
+    }
+}
+@media (max-height: 620px){
+    .cancel-modal .reserve-info .credentials-div{
+ 
+        height: 100px;
+    }
+}
+@media (max-height: 562px){
+    .cancel-modal .reserve-info .credentials-div{
+ 
+        height: 80px;
+    }
+}
